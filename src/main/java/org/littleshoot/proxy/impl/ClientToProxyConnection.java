@@ -1000,7 +1000,7 @@ public class ClientToProxyConnection extends ProxyConnection<HttpRequest> {
         String authentication = request.headers().get(
                 HttpHeaders.Names.PROXY_AUTHORIZATION);
         LOG.debug(authentication);
-        request.headers().remove(HttpHeaders.Names.PROXY_AUTHORIZATION);
+ //       request.headers().remove(HttpHeaders.Names.PROXY_AUTHORIZATION);
         authenticated.set(true);
         return false;
     }
